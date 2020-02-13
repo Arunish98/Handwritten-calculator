@@ -1,0 +1,27 @@
+#: import random random
+<ScatterWidget>
+    orientation: 'vertical'
+    TextInput:
+        
+        id: my_textinput
+        font_size: 150
+        size_hint_y: None
+        height: 200        
+        text: 'Fuck'
+        on_text: root.color_change()
+    
+    FloatLayout:
+        Scatter:
+            center: self.parent.center
+            size_hint: None,None
+            size: my_label.size
+            Label:
+                id: my_label
+                text: my_textinput.text
+                font_size: 150
+                color: root.text_color
+                size: self.texture_size
+                
+                
+
+        

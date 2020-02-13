@@ -9,9 +9,10 @@ class MyPaintWidget(Widget):
 
     def on_touch_down(self, touch):
         with self.canvas:
-            Color(1,1,1)
-            d = 30.
+            Color(1,0,0,1)
+            
             touch.ud['line'] = Line(points=(touch.x, touch.y))
+            
 
     def on_touch_move(self, touch):
         touch.ud['line'].points += [touch.x, touch.y]
