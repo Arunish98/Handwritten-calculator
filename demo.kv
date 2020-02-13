@@ -13,10 +13,12 @@
             size_hint: None,None
             center: self.parent.center
             color: 1,1,1,.1
+        MyPaintWidget
+
         Button:
             text: 'clear'
             size_hint: None,None
-            on_press: root.clear_canvas() 
+            on_release: root.clear_canvas() 
             
 
         
