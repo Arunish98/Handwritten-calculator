@@ -43,6 +43,19 @@ cv.bind("<B1-Motion>", paint)
 # PIL image can be saved as .png .jpg .gif or .bmp file (among others)
 # filename = "my_drawing.png"
 # image1.save(filename)
-button=Button(text="save",command=save)
+button=Button(text="save",command=save,bg="yellow")
+plus=Button(text="Add",command=save,bg="pink")
+minus=Button(text="Subtract",command=save,bg="pink")
+multiply=Button(text="Product",command=save,bg="pink")
+devide=Button(text="Devision",command=save,bg="pink")
 button.pack()
+button.place(width=50,height=30, x=620,y=600)
+
+plus.place(width=50,height=30, x=530,y=650)
+
+minus.place(width=50,height=30, x=590,y=650)
+
+multiply.place(width=50,height=30, x=660,y=650)
+
+devide.place(width=50,height=30, x=720,y=650)
 root.mainloop()
